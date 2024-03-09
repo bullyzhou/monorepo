@@ -1,0 +1,74 @@
+{
+  "nodes": {
+    "@bullyzhou/core": {
+      "name": "@bullyzhou/core",
+      "type": "lib",
+      "data": {
+        "root": "packages/core",
+        "sourceRoot": "packages/core",
+        "name": "@bullyzhou/core",
+        "projectType": "library",
+        "targets": {
+          "test": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "test"
+            },
+            "configurations": {}
+          },
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": [],
+        "tags": []
+      }
+    },
+    "@bullyzhou/rum": {
+      "name": "@bullyzhou/rum",
+      "type": "lib",
+      "data": {
+        "root": "packages/rum",
+        "sourceRoot": "packages/rum",
+        "name": "@bullyzhou/rum",
+        "projectType": "library",
+        "targets": {
+          "test": {
+            "executor": "nx:run-script",
+            "options": {
+              "script": "test"
+            },
+            "configurations": {}
+          },
+          "nx-release-publish": {
+            "dependsOn": [
+              "^nx-release-publish"
+            ],
+            "executor": "@nx/js:release-publish",
+            "options": {},
+            "configurations": {}
+          }
+        },
+        "implicitDependencies": [],
+        "tags": []
+      }
+    }
+  },
+  "externalNodes": {},
+  "dependencies": {
+    "@bullyzhou/core": [],
+    "@bullyzhou/rum": [
+      {
+        "source": "@bullyzhou/rum",
+        "target": "@bullyzhou/core",
+        "type": "static"
+      }
+    ]
+  },
+  "version": "6.0"
+}

@@ -1,0 +1,70 @@
+{
+  "version": "6.0",
+  "nxVersion": "18.0.8",
+  "deps": {
+    "lerna": "^8.1.2"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "@bullyzhou/rum": [
+        {
+          "file": "packages/rum/README.md",
+          "hash": "13471604056694369291"
+        },
+        {
+          "file": "packages/rum/__tests__/rum.test.js",
+          "hash": "2507960561271755332"
+        },
+        {
+          "file": "packages/rum/package.json",
+          "hash": "10127569768697707600",
+          "deps": [
+            "@bullyzhou/core"
+          ]
+        },
+        {
+          "file": "packages/rum/src/rum.js",
+          "hash": "3156647387087273195"
+        }
+      ],
+      "@bullyzhou/core": [
+        {
+          "file": "packages/core/README.md",
+          "hash": "16671302728793525028"
+        },
+        {
+          "file": "packages/core/__tests__/core.test.js",
+          "hash": "12484226608331401226"
+        },
+        {
+          "file": "packages/core/package.json",
+          "hash": "11450471576052699735"
+        },
+        {
+          "file": "packages/core/src/core.js",
+          "hash": "16624877376650111287"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "8587836968507943632"
+      },
+      {
+        "file": "lerna.json",
+        "hash": "10307142885639291195"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "3312921751401544592"
+      },
+      {
+        "file": "package.json",
+        "hash": "16511946684422434279"
+      }
+    ]
+  }
+}

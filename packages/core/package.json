@@ -1,0 +1,32 @@
+{
+  "name": "@bullyzhou/core",
+  "version": "0.0.0",
+  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "keywords": [],
+  "author": "Bully Zhou <bulyzhoudev@gmail.com>",
+  "license": "ISC",
+  "main": "dist/core.js",
+  "module": "dist/core.module.js",
+  "directories": {
+    "lib": "dist",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bullyzhou/monorepo.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/@bullyzhou/core.test.js"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/bullyzhou/monorepo/issues"
+  },
+  "homepage": "https://github.com/bullyzhou/monorepo#readme"
+}
